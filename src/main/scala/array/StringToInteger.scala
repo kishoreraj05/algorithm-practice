@@ -1,0 +1,5 @@
+package array
+
+object StringToInteger {
+
+}
