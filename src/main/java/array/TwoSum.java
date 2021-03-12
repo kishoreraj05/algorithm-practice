@@ -19,6 +19,7 @@
  */
 package array;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,7 +30,9 @@ public class TwoSum {
         for (int i=0; i<nums.length; i++){
             map.put(nums[i],i);
         }
-
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(2);
+        System.out.println();
         for(int j=0; j< nums.length; j++ ){
             int tVal = target - nums[j];
             if (map.containsKey(tVal) && map.get(tVal) != j){
